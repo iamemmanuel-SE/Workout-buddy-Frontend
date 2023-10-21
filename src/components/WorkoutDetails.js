@@ -19,7 +19,7 @@ const handleClick = async () => {
     if(!user){
         return
     }
-    const response = await fetch('/api/workouts/' + workout._id, {
+    const response = await fetch('https://workoutmybuddy-api.onrender.com/api/workouts/' + workout._id, {
         method: 'DELETE',
         headers: {
             'Authorization': `Bearer ${user.token}`

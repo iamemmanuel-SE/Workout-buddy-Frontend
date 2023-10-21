@@ -29,7 +29,7 @@ const handleSubmit = async (e) => {
     const workout = {title, load, reps}
 
     //Patch request
-    const response = await fetch(`/api/workouts/${props.id}`, {
+    const response = await fetch(`https://workoutmybuddy-api.onrender.com/api/workouts/${props.id}`, {
         method: 'PATCH',
         body: JSON.stringify(workout),
         headers: {
