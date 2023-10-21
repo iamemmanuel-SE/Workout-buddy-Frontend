@@ -10,7 +10,7 @@ export const useSignup = () => {
         setIsLoading(true)
         setError(null)
 
-        const response = await fetch('https://workoutmybuddy-api.onrender.com/api/user/signup', {
+        const response = await fetch('https://workoutmybuddy-api.onrender.com/signup', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({email, password})
